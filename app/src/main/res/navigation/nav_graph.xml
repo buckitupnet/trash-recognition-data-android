@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.stetsiuk.cameraapp.ui.splash.SplashFragment"
+        android:label="PermissionsFragment" >
+        <action
+            android:id="@+id/action_permissions_to_camera"
+            app:destination="@id/cameraFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.stetsiuk.cameraapp.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_camera_to_confirmation"
+            app:destination="@id/confirmationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_cameraFragment_to_demoFragment"
+            app:destination="@id/demoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.stetsiuk.cameraapp.ui.confirm.ConfirmationFragment"
+        android:label="ConfirmingFragment">
+        <argument
+            android:name="touchX"
+            app:argType="float"
+            android:defaultValue="300" />
+        <argument
+            android:name="touchY"
+            app:argType="float"
+            android:defaultValue="300" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/demoFragment"
+        android:name="com.stetsiuk.cameraapp.ui.demo.DemoFragment"
+        android:label="fragment_demo"
+        tools:layout="@layout/fragment_demo" >
+        <action
+            android:id="@+id/action_demoFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+
+</navigation>

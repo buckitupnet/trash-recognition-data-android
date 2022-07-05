@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Trash recognition</string>
+    <string name="capture_button_d">Capture</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_button">Settings</string>
+    <string name="exit">exit</string>
+    <string name="pause">pause</string>
+    <string name="demo">Demo</string>
+    <string name="popup_cancel">Cancel</string>
+    <string name="text_please_choose_a_tag">Please choose a tag:</string>
+    <string name="toast_photo_saved">Photo is saved</string>
+    <string name="image">image</string>
+    <string name="failed_to_save">Failed to save</string>
+    <string name="camera_aspect_ratio">9:16</string>
+    <string name="permissions_not_granted_text">Permissions are not granted! Please press settings button to grant permissions</string>
+    <string name="permissions_are_not_granted_tost">Permissions are not granted!</string>
+    <string name="trash_recognition_lable">Trash recognition lable</string>
+    <string name="failed_to_take_a_photo">Failed to take a photo</string>
+
+    <integer name="anim_time">400</integer>
+</resources>
