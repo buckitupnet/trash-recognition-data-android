@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="round_button_small">32dp</dimen>
+    <dimen name="round_button_medium">64dp</dimen>
+    <dimen name="round_button_large">92dp</dimen>
+    <dimen name="shutter_button_margin">40dp</dimen>-->
+    <dimen name="camera_buttons_container_height">110dp</dimen>
+    <dimen name="logo_size">58dp</dimen>
+</resources>
