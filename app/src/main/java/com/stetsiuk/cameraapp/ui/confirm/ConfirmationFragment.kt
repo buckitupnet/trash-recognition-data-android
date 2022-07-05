@@ -100,19 +100,21 @@ class ConfirmationFragment : Fragment(), OnTagClickListener {
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.R)
     private fun removePictureAndGoBackToCamera() {
         try {
-            sharedVM.picture.value?.let {
-                mainActivity.contentResolver?.delete(it.savedUri, null)
-                mainActivity.goBackToCameraFromConfirmation()
+            sharedVM.picture.value?.let { pict ->
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    mainActivity.contentResolver?.delete(pict.savedUri, null)
+                } else {
+                    mainActivity.contentResolver?.delete(pict.savedUri, null, null)
+                }
             }
+            mainActivity.goBackToCameraFromConfirmation()
         } catch (ex: Exception) {
-            Log.e(MainActivity.TAG, "delete picture err: ${ex.message}", ex)
+            Log.e("Tag", "delete picture err: ${ex.message}", ex)
         }
     }
 
-    @SuppressLint("InflateParams")
     private fun showPopUp() {
         val popUpScreenBinding: PopUpScreenBinding = PopUpScreenBinding.inflate(layoutInflater)
         val popupCancelBtn: Button = popUpScreenBinding.popupCancel
