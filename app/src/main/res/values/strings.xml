@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trash recognition</string>
+    <string name="app_name">What I Recycle</string>
     <string name="capture_button_d">Capture</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="settings_button">Settings</string>

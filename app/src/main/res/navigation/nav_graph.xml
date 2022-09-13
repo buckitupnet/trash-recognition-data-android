@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.stetsiuk.cameraapp.ui.splash.SplashFragment"
+        android:name="com.siabucketup.ecotaxi.ui.splash.SplashFragment"
         android:label="PermissionsFragment" >
         <action
             android:id="@+id/action_permissions_to_camera"
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/cameraFragment"
-        android:name="com.stetsiuk.cameraapp.ui.camera.CameraFragment"
+        android:name="com.siabucketup.ecotaxi.ui.camera.CameraFragment"
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera">
         <action
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/confirmationFragment"
-        android:name="com.stetsiuk.cameraapp.ui.confirm.ConfirmationFragment"
+        android:name="com.siabucketup.ecotaxi.ui.confirm.ConfirmationFragment"
         android:label="ConfirmingFragment">
         <argument
             android:name="touchX"
@@ -53,7 +53,7 @@
 
     <fragment
         android:id="@+id/demoFragment"
-        android:name="com.stetsiuk.cameraapp.ui.demo.DemoFragment"
+        android:name="com.siabucketup.ecotaxi.ui.demo.DemoFragment"
         android:label="fragment_demo"
         tools:layout="@layout/fragment_demo" >
         <action

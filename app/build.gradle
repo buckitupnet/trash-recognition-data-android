@@ -16,7 +16,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.stetsiuk.cameraapp"
+        applicationId "com.siabucketup.ecotaxi.app"
         minSdk 29
         targetSdk 32
         versionCode 1
@@ -87,6 +87,9 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.1'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.11.1'
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.11.1'
+
+    //rounded icon
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     //
     implementation 'com.github.javadev:underscore:1.78'

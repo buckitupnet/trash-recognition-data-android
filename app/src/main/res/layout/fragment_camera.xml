@@ -49,13 +49,11 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/link_to_browser_btn"
             android:layout_width="@dimen/logo_size"
             android:layout_height="@dimen/logo_size"
-            android:background="@mipmap/ic_round_trash_foreground"
-            android:contentDescription="@string/capture_button_d"
-            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_round_trash_foreground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/camera_capture_btn"
             app:layout_constraintStart_toStartOf="parent"

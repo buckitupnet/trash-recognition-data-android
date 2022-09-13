@@ -31,15 +31,4 @@
         app:layout_constraintVertical_bias="0.023"
         android:contentDescription="@string/exit" />
 
-    <ImageButton
-        android:id="@+id/pause_btn"
-        android:background="@drawable/ic_baseline_pause_circle_outline_24"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/pause" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
