@@ -11,6 +11,10 @@ apply plugin: 'dagger.hilt.android.plugin'
 android {
     signingConfigs {
         release {
+            storeFile file("/keys/private_key")
+            storePassword "ArkadyKrakovsky\$\$\$trash_recognition"
+            keyAlias "trash_recognition_key"
+            keyPassword "ArkadyKrakovsky\$\$\$trash_recognition"
         }
     }
     compileSdk 32
@@ -19,8 +23,8 @@ android {
         applicationId "com.siabucketup.ecotaxi.app"
         minSdk 29
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -48,6 +52,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.exifinterface:exifinterface:1.3.3'
     def nav_version = "2.4.2"
 
     // Navigation
